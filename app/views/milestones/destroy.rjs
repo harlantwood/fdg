@@ -1,1 +1,0 @@
-page.replace 'milestones', :partial => 'index', :locals => {:node => @node}

@@ -1,3 +1,0 @@
-class Presentation < Asset
-  
-end

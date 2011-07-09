@@ -1,1 +1,0 @@
-require 'pivotal_core_bundle'

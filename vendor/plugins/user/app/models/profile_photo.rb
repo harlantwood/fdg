@@ -1,2 +1,0 @@
-class ProfilePhoto < Photo
-end

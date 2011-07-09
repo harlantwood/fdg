@@ -1,6 +1,0 @@
-if @subscriber.valid?
-  page.replace_html :subscriber_sign_up, :partial => 'subscribers/create'
-else
-  page.replace_html :subscriber_sign_up, :partial => 'subscribers/welcome'
-  page.call 'focus_on_subscriber'
-end

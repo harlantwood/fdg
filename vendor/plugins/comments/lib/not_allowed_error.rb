@@ -1,3 +1,0 @@
-class NotAllowedError < StandardError
-  
-end

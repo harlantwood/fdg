@@ -1,8 +1,0 @@
-birth:
-  id: 1
-  name: birth
-  display_name: Born in
-death:
-  id: 2
-  name: death
-  display_name: Died in

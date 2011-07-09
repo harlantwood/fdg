@@ -1,2 +1,0 @@
-class UnknownAsset < Asset
-end

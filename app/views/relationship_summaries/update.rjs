@@ -1,1 +1,0 @@
-page.replace 'summary', :partial => 'show', :locals => { :relationship => @relationship}

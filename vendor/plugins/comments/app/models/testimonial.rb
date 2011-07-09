@@ -1,3 +1,0 @@
-class Testimonial < Comment
-  
-end

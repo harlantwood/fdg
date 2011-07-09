@@ -1,1 +1,0 @@
-page.replace 'bibliography', :partial => 'show', :locals => {:relationship => @relationship}

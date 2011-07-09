@@ -1,2 +1,0 @@
-module Asset::Worker
-end

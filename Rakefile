@@ -1,34 +1,7 @@
-namespace :flash do
-  desc "Compiles the flash files into public/flash"
-  task :compile => [:network, :wander, :timeline] 
-  
-  # TODO: These are begging to be made into a rule
-  task :network do
-    FlashApp.new("NetworkApp").compile
-  end
-  
-#  task :wander do
-#    FlashApp.new("WanderApp").compile
-#  end
-#
-#  task :timeline do
-#    FlashApp.new("TimelineApp").compile
-#  end
-end
+# Add your own tasks in files placed in lib/tasks ending in .rake,
+# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
 
-class FlashApp
+require File.expand_path('../config/application', __FILE__)
+require 'rake'
 
-  ROOT = File.expand_path('.')
-
-  def initialize(name)
-    @name = name
-  end
-
-  def compile
-    dir = ROOT + "/app/flash/NetworkApp" #TODO: yes, this should change
-    file = "#{dir}/#{@name}.as"
-    outputfile = "#{ROOT}/public/flash/#{@name}.swf"
-    # TODO: Handle errors?
-    puts `#{ROOT}/vendor/flex_sdk/bin/mxmlc #{file} -output #{outputfile}`
-  end
-end
+Fdg::Application.load_tasks

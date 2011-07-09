@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<network>
+  <nodes>
+    <person id="417" stub="true">
+      <name>Martin Luther</name>
+      <param>Martin-Luther_417</param>
+      <primary_photo_url>/proxy/?http://s3.amazonaws.com/production.emmetlabs.com/337/small/558px_luther46c.jpg
+      </primary_photo_url>
+    </person>
+    <person id="109" stub="true">
+      <name>King Henry VIII</name>
+      <param>King-Henry-VIII_109</param>
+      <primary_photo_url>
+        /proxy/?http://s3.amazonaws.com/production.emmetlabs.com/21/small/henry_viii_kingofengland_1491_1547.jpg
+      </primary_photo_url>
+    </person>
+    <person id="556" stub="true">
+      <name>Katharina von Bora</name>
+      <param>Katharina-von-Bora_556</param>
+      <primary_photo_url>/images/default_photo/small.png</primary_photo_url>
+    </person>
+    <person id="279" stub="true">
+      <name>Martin Luther King, Jr.</name>
+      <param>Martin-Luther-King-Jr_279</param>
+      <primary_photo_url>
+        /proxy/?http://s3.amazonaws.com/production.emmetlabs.com/311/small/494px_martin_luther_king_jr_nywts.jpg
+      </primary_photo_url>
+    </person>
+  </nodes>
+  <target type="person" id="417"/>
+  <relationship_supergroup metacategory_id="6" metacategory_name="Spiritual">
+    <relationship_group category_name="influence on" category_id="34">
+      <directed_relationship from_type="person" to_id="279" to_type="person" id="3702" stub="true" from_id="417"/>
+    </relationship_group>
+    <relationship_group category_name="adversary" category_id="36">
+      <directed_relationship from_type="person" to_id="109" to_type="person" id="1108" stub="true" from_id="417"/>
+    </relationship_group>
+  </relationship_supergroup>
+  <relationship_supergroup metacategory_id="1" metacategory_name="Family">
+    <relationship_group category_name="Spouse/Partner" category_id="6">
+      <directed_relationship from_type="person" to_id="556" to_type="person" id="1391" stub="true" from_id="417"/>
+    </relationship_group>
+  </relationship_supergroup>
+</network>

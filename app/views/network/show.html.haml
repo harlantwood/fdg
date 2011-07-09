@@ -1,4 +1,2 @@
-- content_for(:title) do 
-  = @target_person.full_name
-
-= flash_object_tag "/flash/NetworkApp.swf", 950, 750, {:xml_url => formatted_network_path(@target_person, :xml).to_s}, "FFFFFF"
+= javascript_include_tag 'swfobject'
+= flash_object_tag "/flash/NetworkApp.swf", 950, 750, {:xml_url => network_path(42, :xml).to_s}, "FFFFFF"
